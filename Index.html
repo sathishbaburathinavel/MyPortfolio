@@ -1,36 +1,14 @@
 <html>
 <head>
-  <title>Bootstrap Example</title>
+  <title>My Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="merchant/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-   <style>
-   body{
-	   font-family: "Lato";
-	   font-size: 16;
-	  padding-top: 70px;
-	  background-color: lightblue;
-   }
-  
-   .star-light{
-   width: 500px;
-   }
-	.name{
-	font-family: "Lato";
-	   font-size: 28;
-	}
-	.skills{
-	font-family: "Lato";
-	   font-size: 19;
-	}
-	header .mystyle{
-	background-color: lightblue;
-	
-	}
-   </style>
+   <link href="css/portfolio.min.css" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <div class="container-fluid">
@@ -47,29 +25,84 @@
 		<div class="collapse navbar-collapse" id="menu-navbar-collapse-1">
 			<ul class="nav navbar-nav  navbar-right">
 				<li class="hidden"><a href="#page-top"></a></li>
-				<li><a href="#Portfolio">Home</a></li>
+				<li><a href="#Portfolio">Portfolio</a></li>
 				<li><a href="#ContactMe">ContactMe</a></li>
-				<li><a href="#About">About</a></li>
+				<li><a href="#AboutMe">About</a></li>
 			</ul>
 	</div>
 	</nav>
+	<!-- Header Section -->
 	<header>
 		<div class="row">
-			<div class="col-lg-12  col-md-offset-1 text-center">
-				<img class="img-responsive img-circle center-block" width="450" height="350" src="img/profile.jpg" alt="">
-				<div class="intro-text">
+			<div class="col-xd-12  col-xd-offset-1">
+				<div >
 					<span class="name">Sathish Babu R</span>
-					<hr class="star-light">
-					<span class="skills">.Net Developer with 6+ years of experience.</span>
+					<hr class="star-primary">
+					<span class="skills">6+ years of experience in .Net and Java Software Development.
+						<br>Go is my recent favorite language.
+					</span>
 				</div>
 			</div>
 		</div>
     </header>
-	<section>
-	<div id="Portfolio">
-		<span> my Portfolio</span>
-	</div>
+		<!-- Portfolio Section -->
+	<section id="Portfolio">
+		<div class="container-fluid">
+				 <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+		<div class="row">
+			<div class="col-xs-4">
+				<a href="#">
+					<img src="img\Placeholder.png" class="img-responsive"/>
+					</a>
+			</div>
+			<div class="col-xs-4">
+			<a href="#">
+				<img src="img\Placeholder.png" class="img-responsive"/>
+				</a>
+			</div>
+			<div class="col-xs-4">
+				<a href="#">
+					<img src="img\Placeholder.png" class="img-responsive"/>
+					</a>
+			</div>
+		</div>
+		</div>
 	</section>
+	<section id="ContactMe">
+<div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2>Contact Form</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+		<form>
+			<div class="form-group">
+				<label for="usrName">Your Name</label>
+				<input type="text" class="form-control" id="usrName" onerror="emailErrorSpan">
+				<span id="emailErrorSpan" class="form-text text-danger"></span>
+				</div>
+				<div class="form-group">
+				<label for="emailId">Your Email Address</label>
+				<input type="email" class="form-control" id="emailId" onerror="emailError">
+				<span id="emailError" class="form-text text-danger"></span>
+				</div>
+				<div class="form-group">
+				<label for="message">Your Email Address</label>
+				<textarea id="message" class="form-control" rows="5"></textarea> 	
+				<span id="messageError" class="form-text text-danger"></span>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</section>
+	<footer id="AboutMe">
+		 
+		</footer>
+
 </div>
 </body>
 </html>
